@@ -1,14 +1,41 @@
-# Title: Gotxe's Tapo y otras cámaras para bloquear su acceso a la nube
-# Descripción: Lista para impedir que cámaras se conecten a servidores en la nube o sincronización NTP externa
-# Author: Gotxe + la inestimable ayuda redactora de ChatGPT
-# Date: 2025-06-05
-# Domains: 17
+# Title: Gotxe's Tapo C200 - DNS Blocklist + IA 
+# Description: Lista para impedir que la cámara Tapo C200 acceda a servidores en la nube de TP-Link, NTP externos y servicios de sincronización
+# Author: Gotxe + ChatGPT
+# Date: 2025-06-29
+# Total Domains: 28
 
+# TP-Link Cloud & IoT
 0.0.0.0 euw1-device-tapo-care.i.tplinknbu.com
 0.0.0.0 euw1-device-cloudgateway.iot.i.tplinknbu.com
 0.0.0.0 security.iot.i.tplinknbu.com
 0.0.0.0 n-device-api.tplinkcloud.com
-0.0.0.0 tplinkcloud.com
-0.0.0.0 *.tplinkcloud.com
-0.0.0.0 *.tplinknbu.com
-0.0.0.0 *.iot.i.tplinknbu.com
+0.0.0.0 device-api.tplinkcloud.com
+0.0.0.0 n-wap.tplinkcloud.com
+0.0.0.0 use1-device-iot.i.tplinknbu.com
+0.0.0.0 use1-device-cloudgateway.iot.i.tplinknbu.com
+0.0.0.0 eu-wap.tplinkcloud.com
+0.0.0.0 devs.tplinkcloud.com
+0.0.0.0 devs-gw.tplinkcloud.com
+
+# NTP públicos (comunes en cámaras Tapo)
+0.0.0.0 ntp.tplinkcloud.com
+0.0.0.0 ntp1.aliyun.com
+0.0.0.0 ntp2.aliyun.com
+0.0.0.0 time.google.com
+0.0.0.0 time1.google.com
+0.0.0.0 time.windows.com
+0.0.0.0 pool.ntp.org
+0.0.0.0 0.pool.ntp.org
+0.0.0.0 1.pool.ntp.org
+0.0.0.0 2.pool.ntp.org
+0.0.0.0 3.pool.ntp.org
+
+# Wildcards comunes para prevenir futuras conexiones (con regex en Pi-hole)
+# Pi-hole no acepta * en listas normales, usa regex:
+# (\.|^)tplinkcloud\.com$
+# (\.|^)tplinknbu\.com$
+
+# Por si usas AdGuard Home también:
+# ||tplinkcloud.com^
+# ||tplinknbu.com^
+
