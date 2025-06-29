@@ -1,0 +1,2 @@
+(\.|^)tplinkcloud\.com$
+(\.|^)tplinknbu\.com$	
