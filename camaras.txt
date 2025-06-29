@@ -30,12 +30,3 @@
 0.0.0.0 2.pool.ntp.org
 0.0.0.0 3.pool.ntp.org
 
-# Wildcards comunes para prevenir futuras conexiones (con regex en Pi-hole)
-# Pi-hole no acepta * en listas normales, usa regex:
-# (\.|^)tplinkcloud\.com$
-# (\.|^)tplinknbu\.com$
-
-# Por si usas AdGuard Home también:
-# ||tplinkcloud.com^
-# ||tplinknbu.com^
-
