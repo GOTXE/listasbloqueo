@@ -1,0 +1,14 @@
+# Title: Gotxe's Tapo y otras cámaras para bloquear su acceso a la nube
+# Descripción: Lista para impedir que cámaras se conecten a servidores en la nube o sincronización NTP externa
+# Author: Gotxe + la inestimable ayuda redactora de ChatGPT
+# Date: 2025-06-05
+# Domains: 17
+
+0.0.0.0 euw1-device-tapo-care.i.tplinknbu.com
+0.0.0.0 euw1-device-cloudgateway.iot.i.tplinknbu.com
+0.0.0.0 security.iot.i.tplinknbu.com
+0.0.0.0 n-device-api.tplinkcloud.com
+0.0.0.0 tplinkcloud.com
+0.0.0.0 *.tplinkcloud.com
+0.0.0.0 *.tplinknbu.com
+0.0.0.0 *.iot.i.tplinknbu.com
